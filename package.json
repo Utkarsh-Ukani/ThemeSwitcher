@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "themeswitcher",
+=======
+  "name": "minicontext",
+>>>>>>> 661fa1303a513bd12d5a0a01790df4c8197d0aa9
   "private": true,
   "version": "0.0.0",
   "type": "module",

@@ -1,9 +1,11 @@
-
 import { useEffect, useState } from 'react'
 import './App.css'
 import { ThemeProvider } from './contexts/theme'
 import ThemeBtn from './components/ThemeBtn'
 import Card from './components/Card'
+import { Profile } from './components/Profile'
+import { Login } from './components/login'
+import UserContextProvider from './context/UserContextProvider'
 
 function App() {
   const [themeMode,setThemeMode] = useState("light")
@@ -35,6 +37,13 @@ function App() {
         </div>
       </div>
 
+      <UserContextProvider>
+        <div className=' p-10  border border-solid shadow-lg  rounded-lg  bg-white bg-opacity-15'>
+          <h2 className='mb-4 pb-5 text-white text-4xl'>Login</h2>
+          <Login/>
+          <Profile/>
+        </div>
+      </UserContextProvider>
     </ThemeProvider>
   )
 }
